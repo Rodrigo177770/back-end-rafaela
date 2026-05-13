@@ -13,13 +13,33 @@
         alert(saudação("rogerio"))
 
 
-            function soma (a,b ){
+            function somar(a,b ){
                 return a+b
 
             }
-            let tres = number(prompt("digite um numero"))
-            let dois = number(prompt("digite um numero"))
+            let tres = Number(prompt("digite um numero"))
+            let dois = Number(prompt("digite um numero"))
+            alert(`á soma é ${somar(tres,dois)}`)
+            
+            function quadrado (a){
+                return a**2
+            }
+            let vinte = Number(prompt("digite um numero"))
+            alert(`o quadrado e ${quadrado(vinte)}`)
 
+            function idade (idade){
+               let idade20 = idade>=18?"maior de idade":"menor de idade"
+               alert(`você é ${idade20}`)
+            }
+            let quatro = Number(prompt("digite sua idade"))
+            alert(`${idade(quatro)}`)
+
+            function par(par){
+                let par2 = par %2 == 0? "par": "impar"
+
+            }
+            let cincos = Number(prompt("digite um numero"))
+            alert(`${par(cincos)}`)
 
 
 
